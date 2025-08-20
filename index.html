@@ -1,8 +1,75 @@
-<!--email_off-->23f3001359@ds.study.iitm.ac.in<!--/email_off-->
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/monokai.css">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+    <div class="reveal">
+      <div class="slides">        
+        <section>
+            <h1>23f3001359@ds.study.iitm.ac.in</h1>
+        </section>        
+        <section data-markdown>
+            <textarea data-template>
+                ```python
+                def hello():
+                    print("Hello, World!")
+                ```                
+            </textarea>
+        </section>
+        <section>
+            <h2>Python</h2>
+            <ul>
+                <li class="fragment">Python is a OOPS language.</li>
+                <li class="fragment">Its known for its vast number of libraries.</li>
+                <li class="fragment fade-up">It has a very simple syntax language</li>
+            </ul>
+        </section>
+        <section>
+            <pre>
+                <code class="python" data-line-numbers="1-2|4,6-7|9">
+                    import pandas as pd
+                    import seaborn as sns
+
+                    # Load data
+                    data = pd.read_csv('data.csv')
+
+                    # Create visualization
+                    sns.scatterplot(data=data, x='x', y='y')
+                </code>
+            </pre>
+        </section>
+        <section>
+            <h2>Statistical Formula</h2>
+            \[P(A|B) = \frac{P(B|A)P(A)}{P(B)}\]
+            <aside class="notes">
+                This the formula for the probability of occurence of event A given event B has occured
+            </aside>
+        </section>
+        
+      
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/math/math.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
+
+
+    <script>
+        Reveal.initialize({
+            plugins: [ RevealHighlight,
+                       RevealMath.MathJax2,
+                       RevealNotes,
+                       RevealMarkdown
+            ]
+        });
+    </script>
+  </body>
 </html>
